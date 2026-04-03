@@ -4,7 +4,7 @@ import joblib
 
 
 def dm_one_hot():
-    vocabs = {"计算机","数学","科学","人工智能","周杰伦"}
+    vocabs = {"计算机","数学","科学","人工智能","学习"}
     tokenizer = Tokenizer()
     tokenizer.fit_on_texts(vocabs)
     print(tokenizer.word_index)
