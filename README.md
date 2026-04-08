@@ -1,5 +1,5 @@
 # 大模型-自然语言处理
-## 第01课
+## 常用工具
 ### Pycharm工具地址：
 https://download-cdn.jetbrains.com/python/pycharm-2026.1.exe
 
@@ -8,23 +8,21 @@ https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py310_24.1.2-
 
 
 
-### 训练模型代码示例：
+### 训练模型 Demo：
 ```
 def dm_one_hot():
-    vocabs = {"计算机","数学","科学","人工智能"}
+    vocabs = {"Natural","Learning","Language","Course"}
     tokenizer = Tokenizer()
     tokenizer.fit_on_texts(vocabs)
-    print(tokenizer.word_index)
-    print(tokenizer.index_word)
 
     for vocab in vocabs:
         zero_list = [0] * len(vocabs)
         idx = tokenizer.word_index[vocab] - 1
         zero_list[idx] = 1
-        print(vocab, 'one_bot编码是：',zero_list)
+        print(vocab, 'one_bot：',zero_list)
 
-    #todo:保存训练结果
+    #todo:save
     mypath = "./mytokenizer"
     joblib.dump(tokenizer,mypath)
-    print("保存成功")
+    print("done")
 ```
