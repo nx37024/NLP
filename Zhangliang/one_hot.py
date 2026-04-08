@@ -4,7 +4,7 @@ from keras.src.legacy.preprocessing.text import Tokenizer
 import joblib
 
 def dm_one_hot():
-    vocabs = {"计算机","数学","科学","人工智能","周杰伦"}
+    vocabs = {"计算机","数学","科学","人工智能","大模型"}
     tokenizer = Tokenizer()
     tokenizer.fit_on_texts(vocabs)
     print(tokenizer.word_index)
@@ -14,7 +14,7 @@ def dm_one_hot():
         zero_list = [0] * len(vocabs)
         idx = tokenizer.word_index[vocab] - 1
         zero_list[idx] = 1
-        print(vocab, 'one_bot编码是：',zero_list)
+        print(vocab, 'one_bot编码：',zero_list)
 
     #todo:保存训练结果
     mypath = "./mytokenizer"
