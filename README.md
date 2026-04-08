@@ -8,7 +8,7 @@ https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py310_24.1.2-
 
 
 
-### 训练模型 Demo：
+### 模型训练 示例：
 ```
 def dm_one_hot():
     vocabs = {"Natural","Learning","Language","Course"}
