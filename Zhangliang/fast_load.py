@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Author:https://blog.csdn.net/qq_60735796/article/details/141100435
+# @Author:Neo
 import fasttext
 
 def load(model_path):

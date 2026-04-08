@@ -1,7 +1,7 @@
-import jieba
+# -*- coding: utf-8 -*-
+# @Author:Neo
 from keras.src.legacy.preprocessing.text import Tokenizer
 import joblib
-
 
 def dm_one_hot():
     vocabs = {"计算机","数学","科学","人工智能","周杰伦"}

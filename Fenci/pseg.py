@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+# @Author:Neo
 import jieba.posseg as pseg
 
 

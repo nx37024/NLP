@@ -1,4 +1,5 @@
-# coding:utf-8
+# -*- coding: utf-8 -*-
+# @Author:Neo
 import jieba
 
 #精确分词

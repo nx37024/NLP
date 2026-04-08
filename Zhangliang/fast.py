@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Author: CSDN@逐梦苍穹
+# @Author: Neo
 # @Time: 2024/8/10 19:00
 import fasttext
 
